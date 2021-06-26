@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a,
+p,
+ul,
+li,
+.btn,
+h1,
+h2,
+h3,
+h5,
+hr{
+    margin: 0;
+    padding: 0;
+}
+/* 
+===============================
+reusable design
+=============================== 
+*/
+.t-center{
+    text-align: center;
+}
+.t-center h1{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #2d3950;
+    padding-top: 30px;
+}
+.t-center p{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #999999;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    padding-bottom: 60px;
+}
+.t-center span{
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background-color: #5fc3ff;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.t-center span::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2d3950;
+    top: -5px;
+    left: 0;
+    animation: oe 5s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes oe{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 50%;
+    }
+    50%{
+        left: 90%;
+    }
+    75%{
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+
+}
+/* 
+===============================
+reusable design
+=============================== 
+*/
+/* fonts familly */
+.f-l-300{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.f-l-400{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.f-l-700{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.f-l-900{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+/* fonts familly */
+
+
+/* fonts size */
+.fs-15{
+    font-size: 15px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-22{
+    font-size: 22px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-40{
+    font-size: 40px;
+}
+.fs-120{
+    font-size: 120px;
+}
+.tt-u{
+    text-transform: uppercase;
+}
+.tt-c{
+    text-transform: capitalize;
+}
+.ls-1{
+    letter-spacing: 1px;
+}
+.ls-2{
+    letter-spacing: 2px;
+}
+/* fonts size */
+
+
+/* fonts color */
+.t-c-wh{
+    color: #fff !important;
+}
+.t-c-2d{
+    color: #2d3950 !important;
+}
+.t-c-15{
+    color: #15a4fa;
+}
+.bg-c-15{
+    background-color: #15a4fa;
+}
+.bg-c-f9{
+    background-color: #f6f9f9;
+}
+.t-c-99{
+    color: #999999;
+}
+/* fonts color */
+/* 
+===============================
+heder css strat here 
+=============================== 
+*/
+.logo{
+    
+width: 70%;
+}
+.main-menu{
+
+}
+.main-menu ul{
+    
+}
+.main-menu ul li{
+    
+margin-left: 20px;
+}
+.main-menu ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 0;
+}
+.main-menu ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #15a4fa;
+    bottom: -1px;
+    left: 8px;
+    transition: 0.4s all ease-in-out;
+}
+.main-menu ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #15a4fa;
+    bottom: -1px;
+    right: 8px;
+    transition: 0.4s all ease-in-out;
+}
+.main-menu ul li a:hover{
+    color: #2d3950;
+}
+.main-menu ul li a:hover::before{
+width: 35%;
+}
+.main-menu ul li a:hover::after{
+    width: 35%;
+}
+/* 
+===============================
+heder css end here 
+=============================== 
+*/
+
+
+/* 
+===============================
+banner css strat here 
+=============================== 
+*/
+.b-d{
+    align-items: center;
+    min-height: 80vh;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.ban-d .udd{
+    display: inline-block;
+    width: 60%;
+    height: 2px;
+    background: #15a4fa;
+    position: relative;
+}
+.ban-d a{
+
+}
+.down-wrrow{
+position: absolute;
+top: 82%;
+left: 50%;
+transform: translate(-50%);
+
+animation: down 1s linear infinite;
+animation-direction: alternate;
+}
+.down-wrrow i{
+    font-size: 35px;
+    color: #fff;
+}
+@keyframes down{
+    0%{
+        top: 82%;
+    }
+    100%{
+        top: 87%;
+    }
+}
+.ban-d .udd::before{
+content: "";
+position: absolute;
+left: 2%;
+width: 15px;
+height: 15px;
+background: #f6f9f9;
+border-radius: 50%;
+top: -15px;
+animation: ud 4s linear infinite;
+animation-direction: alternate;
+}
+.ban-d .udd::after{
+    content: "";
+    position: absolute;
+    right: 2%;
+    width: 15px;
+    height: 15px;
+    background: #f6f9f9;
+    border-radius: 50%;
+    top: -15px;
+    animation: ud2 4s linear infinite;
+    animation-direction: alternate;
+    }
+@keyframes ud{
+    0%{
+        top: -15px;
+    }
+    25%{
+        top: -50px;
+        border-radius: 30%;
+    }
+    50%{
+        top: -100px;
+        border-radius: 0px;
+    }
+    75%{
+        top: -50px;
+        border-radius: 30%;
+    }
+    100%{
+        top: -15px;
+        border-radius: 50%;
+    }
+}
+@keyframes ud2{
+    0%{
+        top: -100px;
+    }
+    25%{
+        top: -50px;
+        border-radius: 30%;
+    }
+    50%{
+        top: -15px;
+        border-radius: 0px;
+    }
+    75%{
+        top: -50px;
+        border-radius: 30%;
+    }
+    100%{
+        top: -100px;
+        border-radius: 50%;
+    }
+}
+
+.call-btn{
+
+border: 2px solid #15a4fa;
+
+padding: 13px 20px;
+
+margin-top: 40px;
+
+border-radius: none;
+
+transition: .4s all ease-in-out;
+
+position: relative;
+}
+.call-btn:hover{
+    border: 2px solid #15a4fa;
+    background-color: #15a4fa;
+}
+.call-btn:hover span i{
+    animation: call 0.4s linear;
+    animation-direction: alternate;
+    transform: rotate(0deg);
+}
+.call-btn span i{
+margin-left: 10px;
+}
+@keyframes call{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    10%{
+        transform: rotate(0deg);
+    }
+}
+/* 
+===============================
+banner css end here 
+=============================== 
+*/
+
+
+/* 
+===============================
+simple css strat here 
+=============================== 
+*/
+.simple{
+  
+}
+/* 
+===============================
+simple css end here 
+=============================== 
+*/
+
+/* 
+===============================
+work css strat here 
+=============================== 
+*/
+.work{
+
+padding: 25px;
+}
+.work-item{
+
+text-align: center;
+
+margin: 40px 0;
+
+transition: 0.4s all ease-in-out;
+
+padding: 40px 0;
+
+border-radius: 5px;
+
+position: relative;
+}
+.bg-w{
+
+position: relative;
+
+width: 25%;
+
+margin: auto;
+
+height: 75px;
+}
+.bg-w::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #48baff;
+    border-radius: 3px 0px 0px 3px;
+    z-index: -111;
+}
+.bg-w::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #5fc3ff;
+    border-radius: 0px 3px 3px 0px;
+    z-index: -111;
+}
+.bg-w i{
+
+font-size: 40px;
+
+z-index: 999999999999;
+
+color: #fff;
+
+line-height: 75px;
+}
+.work-item h1{
+
+padding: 20px;
+}
+.work-item p{
+
+}
+.work-item:hover{
+    box-shadow: 0px 0px 10px #9999993b;
+    transform: translateY(-5px);
+}
+.work-item::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: #5fc3ff;
+    right: 50%;
+    bottom: 0;
+    border-radius: 0px 0px 0px 5px;
+    transition: 0.8s all ease-in-out;
+}
+.work-item::after{
+position: absolute;
+content: "";
+width: 0%;
+height: 5px;
+background: #5fc3ff;
+left: 50%;
+bottom: 0;
+border-radius: 0px 0px 5px 0px;
+transition: 0.8s all ease-in-out;
+}
+.work-item:hover::after{
+    width: 50%;
+}
+.work-item:hover::before{
+    width: 50%;
+}
+
+/* 
+===============================
+work css end here 
+=============================== 
+*/
+
+/* 
+===============================
+item css strat here 
+=============================== 
+*/
+.showcase{
+    padding-bottom: 80px;
+}
+.items{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.items img{
+    position: relative;
+    transition: 0.6s all ease-in-out;
+}
+.items::after{
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 0%;
+ bottom: 0;
+ background-color: #5fc3ff;
+ left: 0;
+ opacity: .7;
+ transition: 0.6s all ease-in-out;
+}
+.items:hover::after{
+    height: 100%;
+}
+.items:hover img{
+    transform: scale(1.1);
+}
+.item-icon{
+
+position: absolute;
+
+left: 50%;
+
+top: 60%;
+
+transform: translate(-50%, -50%);
+
+z-index: 99999999999;
+
+opacity: 0;
+
+transition: 0.4s all ease-in-out;
+
+}
+.item-icon i{
+    
+padding: 15px 14px;
+    
+border: 2px solid #fff;
+    
+color: #fff;
+    
+font-size: 20px;
+
+transition: 0.3s all ease-in-out;
+}
+.item-icon i:hover{
+    border: 2px solid #5fc3ff;
+    background-color: #5fc3ff;
+    color: #fff;
+}
+.items:hover .item-icon{
+    opacity: 1;
+
+    left: 50%;
+
+    top: 50%;
+}
+/* 
+===============================
+item css end here 
+=============================== 
+*/
+
+/* 
+===============================
+contact css end here 
+=============================== 
+*/
+.contact{
+    background-image: url(../images/contact-backgorun.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 60px 0;
+}
+.contact-form{
+}
+.contact-form input{
+    margin-bottom: 15px;
+    background: transparent;
+    border: 2px solid #999999;
+    color: #5fc3ff;
+    padding: 15px;
+}
+.contact-form textarea{background: transparent;border: 2px solid #999999;height: 150px;}
+.contact-form form label{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.contact-form .c-b input[type="checkbox"]{
+
+margin-right: 10px;
+}
+.contact-form .c-b input[type="submit"]{
+    
+padding: 8px 40px;
+color: #fff;
+    border: 2px solid #15a4fa;
+    border-radius: 5px;
+    transition: 0.4s all ease-in-out;
+}
+.contact-form input:focus-visible{
+    outline: none;
+}
+.contact-form input:focus {
+    color: #5fc3ff;
+    background-color: #fff;
+    border-color: #5fc3ff;
+    outline: 0;
+    box-shadow: 0px -1px 8px 3px rgb(13 110 253 / 25%);
+    background: transparent;
+}
+.contact-form textarea:focus{
+    color: #5fc3ff;
+    background-color: #fff;
+    border-color: #5fc3ff;
+    outline: 0;
+    box-shadow: 0px -1px 8px 3px rgb(13 110 253 / 25%);
+    background: transparent;
+}
+.c-b{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+height: 75px;
+
+margin-top: 10px;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.contact-form input .check-box{
+}
+.contact-form .c-b input[type="submit"]:hover{
+    color: #fff;
+    border: 2px solid #15a4fa;
+    background-color: #15a4fa;
+    transform: translateY(-2px);
+}
+
+/* 
+===============================
+contact css end here 
+=============================== 
+*/
+/* 
+===============================
+footer css strat here 
+=============================== 
+*/
+footer{
+    
+padding: 20px 0;
+}
+.f-d{
+justify-content: space-between;
+}
+.footer-text{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #999;
+}
+.footer-text p{
+    
+line-height: 40px;
+}
+.footer-text a{
+
+text-decoration: none;
+color: #15a4fa;
+}
+.footer-icon {
+
+display: flex;
+
+justify-content: flex-end;
+}
+.footer-icon i{
+    
+margin-left: 20px;
+    
+font-size: 40px;
+
+color: #15a4fa;
+
+cursor: pointer;
+
+transition: 0.4s all ease-in-out;
+}
+.footer-icon i:hover{
+    transform: translateY(-3px);
+    color: #1195e4;
+}
+/* 
+===============================
+footer css end here 
+=============================== 
+*/
+
+
